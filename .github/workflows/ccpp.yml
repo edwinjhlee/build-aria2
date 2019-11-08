@@ -9,7 +9,9 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: work
-      run: sudo bash ./build.sh
+    - name: release
+      run: bash ./get-release.sh
+    # - name: work
+    #   run: sudo bash ./build.sh
 
 
