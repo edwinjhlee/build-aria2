@@ -36,5 +36,11 @@ jobs:
         asset_path: ./workdir/bin/aria2c.aarch64
         asset_name: aria2c.aarch64
         asset_content_type: application/octet-stream
+    - name: Upload Multiple Assets
+      uses: AButler/upload-release-assets@v1.0
+      with:
+        files: "./workdir/bin/*"
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        release-tag: latest
 
 
