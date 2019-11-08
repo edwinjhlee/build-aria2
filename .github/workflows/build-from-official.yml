@@ -1,0 +1,26 @@
+name: C/C++ CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: work
+      run: sudo bash ./build.sh
+    - uses: meeDamian/github-release@1.0
+      with:
+        name: latest
+        tag: latest
+        token: ${{secrets.GITHUB_TOKEN}}
+        gzip: false
+        allow_override: true
+        files: >
+          aria2c.linux
+          aria2c.linux.upx
+        
+
+
