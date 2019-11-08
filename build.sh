@@ -118,9 +118,9 @@ build.aria(){
 
 prepare.aria.bin(){
     cd $WORKDIR && mkdir -p bin && cd bin
-    cp $LOCAL_DIR/bin/aria2c ./aria2c
-    cp $LOCAL_DIR/bin/aria2c ./aria2c.upx
-    upx ./aria2c.upx
+    cp $LOCAL_DIR/bin/aria2c ./aria2c.linux
+    cp $LOCAL_DIR/bin/aria2c ./aria2c.linux.upx
+    upx ./aria2c.linux.upx
 }
 
 build.zip
