@@ -47,6 +47,7 @@ jobs:
         name: latet
         tag: latest
         token: ${{secrets.GITHUB_TOKEN}}
+        gzip: false
         files: >
           workdir/bin/aria2c.aarch64
           workdir/bin/aria2c.aarch64.upx
