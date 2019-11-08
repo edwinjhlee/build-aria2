@@ -45,6 +45,7 @@ jobs:
     - uses: meeDamian/github-release@1.0
       with:
         name: latet
+        tag: latest
         token: ${{secrets.GITHUB_TOKEN}}
         files: "./workdir/bin/"
         allow_override: true
