@@ -12,7 +12,9 @@ jobs:
     # - name: work
     #   run: sudo bash ./build.sh
     # Following depends on upx installed in ./build.sh
-    - name: release
+    - name: upx
+      run: sudo apt install upx -y
+    - name: get-release
       run: bash ./get-release.sh
     - name: Create Release
       id: create_release
