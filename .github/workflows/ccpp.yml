@@ -47,7 +47,15 @@ jobs:
         name: latet
         tag: latest
         token: ${{secrets.GITHUB_TOKEN}}
-        files: "./workdir/bin/"
+        files: >
+          workdir/bin/aria2c.aarch64
+          workdir/bin/aria2c.aarch64.upx
+          workdir/bin/aria2c.darwin
+          workdir/bin/aria2c.darwin.upx
+          workdir/bin/aria2c.win32.exe
+          workdir/bin/aria2c.win32.upx.exe
+          workdir/bin/aria2c.win64.exe
+          workdir/bin/aria2c.win64.upx.exe
         allow_override: true
 
 
