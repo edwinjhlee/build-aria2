@@ -19,8 +19,8 @@ jobs:
         gzip: false
         allow_override: true
         files: >
-          aria2c.linux
-          aria2c.linux.upx
+          bin/aria2c.linux
+          bin/aria2c.linux.upx
         
 
 
